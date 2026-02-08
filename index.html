@@ -56,6 +56,16 @@
     button:active{transform:scale(0.95);}
     footer{text-align:center;padding:35px 20px;background:rgba(255,255,255,0.04);border-top:1px solid rgba(255,255,255,0.08);opacity:0.8;font-size:0.9rem;}
     @media(max-width:700px){.nav-container{flex-direction:column;gap:12px;}nav a{margin-left:0;}}
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: 3px solid var(--accent);
+        box-shadow: 0 10px 30px rgba(56,189,248,0.4);
+      }
+
   </style>
 </head>
 <body>
@@ -76,7 +86,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-box">
+      <img src="me.jpg" alt="Colby" class="profile-pic">
       <h1>Hi, I'm Colby 👋</h1>
+
       <p>Student • Creator • Website Developer <br>I design clean, modern websites that feel fast, smooth, and professional.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn btn-primary">Hire Me</a>
