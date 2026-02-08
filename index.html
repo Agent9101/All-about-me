@@ -395,9 +395,9 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -416,10 +416,10 @@
       // Send the email
       emailjs.sendForm("service_9yt72af", "template_k9h1kyb", this)
         .then(function() {
-          alert("Message sent successfully! 🎉"); // success
+          alert("Message sent successfully!"); // success
           contactForm.reset();
         }, function(error) {
-          alert("Oops… something went wrong. ❌\n" + JSON.stringify(error)); // error
+          alert("Oops… something went wrong." + JSON.stringify(error)); // error
         });
     });
   </script>
